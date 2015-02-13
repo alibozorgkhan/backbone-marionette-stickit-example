@@ -1,5 +1,4 @@
 requirejs.config({
-    waitSeconds: 1000,
     paths: {
         jquery: '../bower_components/jquery/dist/jquery',
         underscore: '../bower_components/underscore/underscore',
@@ -13,13 +12,6 @@ requirejs.config({
     },
     shim: {
         bootstrap: ['jquery']
-    },
-    config: {
-        tpl: {
-            interpolate: /\{\{(.+?)\}\}/g,
-            escape: /\{\{=(.+?)\}\}/g,
-            variable: 'data'
-        }
     }
 });
 
